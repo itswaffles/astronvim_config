@@ -291,32 +291,13 @@ local config = {
                 end,
                 treesitter = { -- overrides `require("treesitter").setup(...)`
                         ensure_installed = {
-                                "bash",
-                                "c",
-                                "cpp",
-                                "css",
-                                "javascript",
-                                "jsdoc",
-                                "json",
-                                "html",
                                 "lua",
-                                "python",
                         },
                 },
                 -- use mason-lspconfig to configure LSP installations
                 ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
                         ensure_installed = {
-                                "angularls",
-                                "bashls",
-                                "clangd",
-                                "cssls",
-                                "eslint",
-                                "html",
-                                "jsonls",
-                                "marksman",
-                                "pyright",
                                 "sumneko_lua",
-                                "tsserver",
                         },
                 },
                 -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
