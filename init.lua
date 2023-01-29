@@ -73,22 +73,30 @@ local config = {
 
         -- Set dashboard header
         header = {
-                'MMP"""""""MM MP""""""`MM M""""""""M MM"""""""`MM MMP"""""YMM',
-                "M' .mmmm  MM M  mmmmm..M Mmmm  mmmM MM  mmmm,  M M' .mmm. `M",
-                "M         `M M.      `YM MMMM  MMMM M'        .M M  MMMMM  M",
-                'M  MMMMM  MM MMMMMMM.  M MMMM  MMMM MM  MMMb. "M M  MMMMM  M',
-                "M  MMMMM  MM M. .MMM'  M MMMM  MMMM MM  MMMMM  M M. `MMM' .M",
-                "M  MMMMM  MM Mb.     .dM MMMM  MMMM MM  MMMMM  M MMb     dMM",
-                "MMMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMM MMMMMMMMMMMM MMMMMMMMMMM",
-                '         M"""""""`YM M""MMMMM""M M""M M"""""`\'"""`YM',
-                "         M  mmmm.  M M  MMMMM  M M  M M  mm.  mm.  M",
-                "         M  MMMMM  M M  MMMMP  M M  M M  MMM  MMM  M",
-                "         M  MMMMM  M M  MMMM' .M M  M M  MMM  MMM  M",
-                "         M  MMMMM  M M  MMP' .MM M  M M  MMM  MMM  M",
-                "         M  MMMMM  M M     .dMMM M  M M  MMM  MMM  M",
-                "         MMMMMMMMMMM MMMMMMMMMMM MMMM MMMMMMMMMMMMMM",
+                "         █████╗ ███████╗████████╗██████╗  ██████╗ ██╗   ██╗██╗███╗   ███╗    ",
+                "        ██╔══██╗██╔════╝╚══██╔══╝██╔══██╗██╔═══██╗██║   ██║██║████╗ ████║    ",
+                "        ███████║███████╗   ██║   ██████╔╝██║   ██║██║   ██║██║██╔████╔██║    ",
+                "        ██╔══██║╚════██║   ██║   ██╔══██╗██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║    ",
+                "        ██║  ██║███████║   ██║   ██║  ██║╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║    ",
+                "        ╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝    ",
         },
-
+        -- header = {
+        --         'MMP"""""""MM MP""""""`MM M""""""""M MM"""""""`MM MMP"""""YMM',
+        --         "M' .mmmm  MM M  mmmmm..M Mmmm  mmmM MM  mmmm,  M M' .mmm. `M",
+        --         "M         `M M.      `YM MMMM  MMMM M'        .M M  MMMMM  M",
+        --         'M  MMMMM  MM MMMMMMM.  M MMMM  MMMM MM  MMMb. "M M  MMMMM  M',
+        --         "M  MMMMM  MM M. .MMM'  M MMMM  MMMM MM  MMMMM  M M. `MMM' .M",
+        --         "M  MMMMM  MM Mb.     .dM MMMM  MMMM MM  MMMMM  M MMb     dMM",
+        --         "MMMMMMMMMMMM MMMMMMMMMMM MMMMMMMMMM MMMMMMMMMMMM MMMMMMMMMMM",
+        --         '         M"""""""`YM M""MMMMM""M M""M M"""""`\'"""`YM',
+        --         "         M  mmmm.  M M  MMMMM  M M  M M  mm.  mm.  M",
+        --         "         M  MMMMM  M M  MMMMP  M M  M M  MMM  MMM  M",
+        --         "         M  MMMMM  M M  MMMM' .M M  M M  MMM  MMM  M",
+        --         "         M  MMMMM  M M  MMP' .MM M  M M  MMM  MMM  M",
+        --         "         M  MMMMM  M M     .dMMM M  M M  MMM  MMM  M",
+        --         "         MMMMMMMMMMM MMMMMMMMMMM MMMM MMMMMMMMMMMMMM",
+        -- },
+        --
         -- Default AstroNvim header
         -- header = {
         --     " █████  ███████ ████████ ██████   ██████",
@@ -112,7 +120,7 @@ local config = {
                         bg = "#1e222a",
                 },
                 highlights = function(hl) -- or a function that returns a new table of colors to set
-                        local C = require "default_theme.colors"
+                        local C = require("default_theme.colors")
 
                         hl.Normal = { fg = C.fg, bg = C.bg }
 
@@ -268,9 +276,9 @@ local config = {
                         {
                                 "itswaffles/monokai-pro.nvim",
                                 config = function()
-                                        require("monokai-pro").setup {
+                                        require("monokai-pro").setup({
                                                 filter = "spectrum",
-                                        }
+                                        })
                                 end,
                         },
                 },
